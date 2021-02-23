@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E053C3025E5452500F14028 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E053C2F25E5452500F14028 /* Settings.bundle */; };
 		0E15D34725E34CB700E99D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15D34625E34CB700E99D04 /* AppDelegate.swift */; };
 		0E15D34925E34CB700E99D04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15D34825E34CB700E99D04 /* SceneDelegate.swift */; };
 		0E15D34B25E34CB700E99D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15D34A25E34CB700E99D04 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E053C2F25E5452500F14028 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0E15D34325E34CB700E99D04 /* MultipeerRPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipeerRPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E15D34625E34CB700E99D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E15D34825E34CB700E99D04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				0E15D35425E34CB900E99D04 /* Info.plist */,
 				0E4F46E425E3E7FB00EC7574 /* Localizable.strings */,
 				0E4F476825E4BD8A00EC7574 /* InfoPlist.strings */,
+				0E053C2F25E5452500F14028 /* Settings.bundle */,
 			);
 			path = MultipeerRPS;
 			sourceTree = "<group>";
@@ -265,6 +268,8 @@
 				0E15D34025E34CB700E99D04 /* Frameworks */,
 				0E15D34125E34CB700E99D04 /* Resources */,
 				1C4FA0BBB25033336533C928 /* [CP] Embed Pods Frameworks */,
+				0E053C3425E5459200F14028 /* App Version Run Script */,
+				0E053C4325E5464D00F14028 /* LicensePlist Run Script */,
 			);
 			buildRules = (
 			);
@@ -366,6 +371,7 @@
 				0E4F46E225E3E7FB00EC7574 /* Localizable.strings in Resources */,
 				0E15D35025E34CB900E99D04 /* Assets.xcassets in Resources */,
 				0E15D34E25E34CB700E99D04 /* Main.storyboard in Resources */,
+				0E053C3025E5452500F14028 /* Settings.bundle in Resources */,
 				0E4F476625E4BD8A00EC7574 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +393,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E053C3425E5459200F14028 /* App Version Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "App Version Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue ${MARKETING_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist\"\n";
+		};
+		0E053C4325E5464D00F14028 /* LicensePlist Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "LicensePlist Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION = \"Debug\" ]; then\n$PODS_ROOT/LicensePlist/license-plist --output-path $PRODUCT_NAME/Settings.bundle\nfi\n";
+		};
 		15A2A486DC1BC8B37DE2CFF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

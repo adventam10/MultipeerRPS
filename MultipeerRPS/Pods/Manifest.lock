@@ -26,6 +26,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.2.2)"
   - GoogleUtilities/Reachability (7.2.2):
     - GoogleUtilities/Logger
+  - LicensePlist (3.0.5)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
@@ -35,6 +36,7 @@ PODS:
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
+  - LicensePlist
 
 SPEC REPOS:
   trunk:
@@ -42,6 +44,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - LicensePlist
     - nanopb
     - PromisesObjC
 
@@ -50,9 +53,10 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: c542a2feaac9ab98fd074e8f1a02c3585bbfbd47
   GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
   GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
+  LicensePlist: 11c638fa9dc22ddb5771cdf910242ae1ba2684da
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: b7ae62d2c58545126c3a8dbb6458a207a8370564
+PODFILE CHECKSUM: 3a185d0d017011ba37137a5643ae905f202c1a9e
 
 COCOAPODS: 1.10.1

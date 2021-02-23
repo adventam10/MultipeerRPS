@@ -7,6 +7,7 @@ target 'MultipeerRPS' do
 
   # Pods for MultipeerRPS
   pod 'Google-Mobile-Ads-SDK'
+  pod 'LicensePlist'
 
   target 'MultipeerRPSTests' do
     inherit! :search_paths
