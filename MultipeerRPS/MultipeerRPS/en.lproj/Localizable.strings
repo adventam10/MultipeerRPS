@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  MultipeerRPS
+
+  Created by makoto on 2021/02/22.
+  
+*/
+
+"win_title" = "Win:";
+"lose_title" = "Lose:";
+"draw_title" = "Draw:";
+
+"rock" = "Rock";
+"paper" = "Paper";
+"scissors" = "Scissors";
+
+"alert_ok" = "OK";
+"alert_cancel" = "Cancel";
+"reset_alert_message" = "Resetting wins and losses. Are you sure?";
+
+"account_name" = "Account Name";
+"reset_data" = "Reset Data";
+"privacy_policy" = "Privacy Policy";
+"app_version" = "App Version";
+
+"setting" = "Setting";
+"search" = "Search";
+
+"state_connected" = "Play with %@";
+"state_notConnected" = "Press search button to find a player.";
+"state_waiting" = "Waiting for %@";
+"state_waiting_you" = "%@ is waiting for you";
+"drop_description" = "Drop here";
+
+"play" = "Play";
+"app_description" = "You can play rock-paper-scissors with a friend nearby using Wi-Fi and Bluetooth.";

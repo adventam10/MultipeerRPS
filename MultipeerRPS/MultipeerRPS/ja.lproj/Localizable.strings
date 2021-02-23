@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  MultipeerRPS
+
+  Created by makoto on 2021/02/22.
+  
+*/
+
+"win_title" = "かち：";
+"lose_title" = "まけ：";
+"draw_title" = "ひきわけ：";
+
+"rock" = "ぐー";
+"paper" = "ぱー";
+"scissors" = "ちょき";
+
+"alert_ok" = "OK";
+"alert_cancel" = "キャンセル";
+"reset_alert_message" = "勝敗をリセットします。よろしいですか？";
+
+"account_name" = "アカウント名";
+"reset_data" = "勝敗をリセット";
+"privacy_policy" = "プライバシーポリシー";
+"app_version" = "アプリバージョン";
+
+"setting" = "設定";
+"search" = "検索";
+
+"state_connected" = "%@と対戦中";
+"state_notConnected" = "検索を押して対戦相手を探してください";
+"state_waiting" = "%@の手待ち";
+"state_waiting_you" = "%@があなたの手を待ち";
+"drop_description" = "ここにドロップしてください";
+
+"play" = "あそぶ";
+"app_description" = "Wi-FiとBluetoothを使って近くの人とじゃんけんで遊べます。";

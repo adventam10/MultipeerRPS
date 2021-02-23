@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MultipeerRPS
+
+  Created by makoto on 2021/02/23.
+  
+*/
+
+CFBundleDisplayName = "SD RPS";
