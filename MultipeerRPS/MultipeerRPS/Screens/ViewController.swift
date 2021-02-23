@@ -22,15 +22,20 @@ final class ViewController: UIViewController {
         navigationItem.rightBarButtonItem?.title = NSLocalizedString("setting", comment: "")
         appDescriptionLabel.text = NSLocalizedString("app_description", comment: "")
         playButton.setTitle(NSLocalizedString("play", comment: ""), for: .normal)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
 
-        GADInterstitialAd.load(withAdUnitID: "ca-app-pub-3940256099942544/4411468910", request: GADRequest()) { [weak self] (ad, error) in
-            if let error = error {
-                print(error.localizedDescription)
+        if let id = adUnitID(key: "initialBanner") {
+            bannerView.adUnitID = id
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+        }
+
+        if let id = adUnitID(key: "initialinterstitial") {
+            GADInterstitialAd.load(withAdUnitID: id, request: GADRequest()) { [weak self] (ad, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                }
+                self?.interstitial = ad
             }
-            self?.interstitial = ad
         }
     }
 
@@ -51,5 +56,15 @@ final class ViewController: UIViewController {
             rps.presentationModel = .init(userSettingRepository: UserSettingRepositoryImp(), p2pManager: RPSP2PManagerImp())
             isShownInterstitial = true
         }
+    }
+}
+
+extension UIViewController {
+
+    func adUnitID(key: String) -> String? {
+        guard let adUnitIDs = Bundle.main.object(forInfoDictionaryKey: "AdUnitIDs") as? [String: String] else {
+            return nil
+        }
+        return adUnitIDs[key]
     }
 }

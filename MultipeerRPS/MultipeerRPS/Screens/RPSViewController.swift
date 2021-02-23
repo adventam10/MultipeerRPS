@@ -116,9 +116,11 @@ final class RPSViewController: UIViewController {
         updateState()
         updateCount()
 
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        if let id = adUnitID(key: "rpsBanner") {
+            bannerView.adUnitID = id
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+        }
     }
 }
 
