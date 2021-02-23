@@ -58,7 +58,7 @@ extension SettingTableViewController {
                 self?.tableView.deselectRow(at: indexPath, animated: true)
             }
         case .privacyPolicy:
-            if let url = URL(string: "https://adventam10.github.io/DNAConverter-iOS/PrivacyPolicy/PrivacyPolicy") {
+            if let url = URL(string: "https://adventam10.github.io/MultipeerRPS/PrivacyPolicy/PrivacyPolicy") {
                 UIApplication.shared.open(url)
             }
             tableView.deselectRow(at: indexPath, animated: true)
