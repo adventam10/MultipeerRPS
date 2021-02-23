@@ -7,9 +7,11 @@
 
 import UIKit
 import MultipeerConnectivity
+import GoogleMobileAds
 
 final class RPSViewController: UIViewController {
 
+    @IBOutlet private weak var bannerView: GADBannerView!
     @IBOutlet private weak var drawTitleLabel: UILabel!
     @IBOutlet private weak var loseTitleLabel: UILabel!
     @IBOutlet private weak var winTitleLabel: UILabel!
@@ -113,6 +115,10 @@ final class RPSViewController: UIViewController {
         navigationItem.rightBarButtonItem = browseButton
         updateState()
         updateCount()
+
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
 }
 

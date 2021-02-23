@@ -1,0 +1,6 @@
+framework module Pods_MultipeerRPS_MultipeerRPSUITests {
+  umbrella header "Pods-MultipeerRPS-MultipeerRPSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

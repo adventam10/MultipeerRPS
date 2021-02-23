@@ -31,6 +31,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXr-ZI-RfA" customClass="GADBannerView">
+                                <rect key="frame" x="245" y="66" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="A1Z-Nz-m8t"/>
+                                    <constraint firstAttribute="width" constant="320" id="mWo-cx-Or9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,11 +46,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5kT-9v-sFh" secondAttribute="trailing" constant="16" id="CcK-Bk-ynX"/>
                             <constraint firstItem="5kT-9v-sFh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E8g-Fd-ctS"/>
                             <constraint firstItem="5kT-9v-sFh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NaI-PR-Zf3"/>
-                            <constraint firstItem="5kT-9v-sFh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="W9s-fz-aQZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g5X-Uh-fA2" secondAttribute="trailing" constant="16" id="XD6-EQ-18v"/>
                             <constraint firstItem="g5X-Uh-fA2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5kT-9v-sFh" secondAttribute="bottom" constant="16" id="YNn-1L-ftd"/>
                             <constraint firstItem="g5X-Uh-fA2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iXy-Fg-kXh"/>
+                            <constraint firstItem="5kT-9v-sFh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bXr-ZI-RfA" secondAttribute="bottom" constant="16" id="j9r-Au-IS1"/>
                             <constraint firstItem="g5X-Uh-fA2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbR-cr-s14"/>
+                            <constraint firstItem="bXr-ZI-RfA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="mEr-V1-2aH"/>
+                            <constraint firstItem="bXr-ZI-RfA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfu-Fd-jja"/>
                             <constraint firstItem="5kT-9v-sFh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xrr-W5-bAE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g5X-Uh-fA2" secondAttribute="bottom" constant="32" id="yOo-tQ-efd"/>
                         </constraints>
@@ -56,6 +66,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="appDescriptionLabel" destination="g5X-Uh-fA2" id="3hD-cE-fMG"/>
+                        <outlet property="bannerView" destination="bXr-ZI-RfA" id="tbk-GI-TOY"/>
                         <outlet property="playButton" destination="5kT-9v-sFh" id="Vzu-AL-2b8"/>
                     </connections>
                 </viewController>
@@ -63,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="396" y="-447"/>
         </scene>
-        <!--View Controller-->
+        <!--RPSView Controller-->
         <scene sceneID="MWy-qi-65t">
             <objects>
-                <viewController id="Ls9-GJ-TrF" customClass="RPSViewController" customModule="MultipeerRPS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ls9-GJ-TrF" userLabel="RPSView Controller" customClass="RPSViewController" customModule="MultipeerRPS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="83q-Nb-M55">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +240,14 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-3B-QPU" customClass="GADBannerView">
+                                <rect key="frame" x="245" y="1014" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="QPv-hH-t5x"/>
+                                    <constraint firstAttribute="height" priority="250" constant="50" id="xU5-Rw-275"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ze8-WP-bA6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -241,11 +260,14 @@
                             <constraint firstItem="Ze8-WP-bA6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="m5d-pS-3oV" secondAttribute="bottom" constant="8" id="DPX-bx-yQs"/>
                             <constraint firstItem="Ze8-WP-bA6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m5d-pS-3oV" secondAttribute="trailing" constant="16" id="EJD-z8-Dfc"/>
                             <constraint firstItem="eEm-ax-S4Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze8-WP-bA6" secondAttribute="leading" constant="16" id="EWI-wr-u7i"/>
+                            <constraint firstItem="Ze8-WP-bA6" firstAttribute="bottom" secondItem="2Yb-3B-QPU" secondAttribute="bottom" constant="16" id="HEf-GD-PG6"/>
                             <constraint firstItem="vzO-oL-O4y" firstAttribute="top" secondItem="eEm-ax-S4Q" secondAttribute="bottom" constant="16" id="IRS-nK-EcV"/>
                             <constraint firstItem="Ze8-WP-bA6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vzO-oL-O4y" secondAttribute="trailing" constant="32" id="ODF-Qg-ku3"/>
+                            <constraint firstItem="2Yb-3B-QPU" firstAttribute="centerX" secondItem="83q-Nb-M55" secondAttribute="centerX" id="WU8-23-hjV"/>
                             <constraint firstItem="vzO-oL-O4y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze8-WP-bA6" secondAttribute="leading" constant="32" id="iXd-tI-McI"/>
                             <constraint firstItem="Ze8-WP-bA6" firstAttribute="trailing" secondItem="m5d-pS-3oV" secondAttribute="trailing" priority="750" constant="16" id="kP2-bW-HEW"/>
                             <constraint firstItem="Ze8-WP-bA6" firstAttribute="trailing" secondItem="vzO-oL-O4y" secondAttribute="trailing" priority="750" constant="32" id="m0Z-oE-h6o"/>
+                            <constraint firstItem="2Yb-3B-QPU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m5d-pS-3oV" secondAttribute="bottom" constant="16" id="mOR-iH-7cT"/>
                             <constraint firstItem="eEm-ax-S4Q" firstAttribute="centerX" secondItem="83q-Nb-M55" secondAttribute="centerX" id="ngD-gm-kD8"/>
                             <constraint firstItem="m5d-pS-3oV" firstAttribute="centerX" secondItem="83q-Nb-M55" secondAttribute="centerX" id="s0M-lO-Bqj"/>
                             <constraint firstItem="m5d-pS-3oV" firstAttribute="top" secondItem="vzO-oL-O4y" secondAttribute="bottom" constant="32" id="uaS-pM-uR1"/>
@@ -254,6 +276,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sK9-sD-dDO"/>
                     <connections>
+                        <outlet property="bannerView" destination="2Yb-3B-QPU" id="23O-1W-SWs"/>
                         <outlet property="drawCountLabel" destination="9h7-4f-RFg" id="pNb-dM-hYf"/>
                         <outlet property="drawTitleLabel" destination="ckb-Km-C30" id="lmx-jQ-kis"/>
                         <outlet property="dropAreaView" destination="vzO-oL-O4y" id="SzR-xX-HCb"/>

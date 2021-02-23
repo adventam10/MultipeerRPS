@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,9 @@
 		0E4F46ED25E4860800EC7574 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F46EC25E4860800EC7574 /* ResultViewController.swift */; };
 		0E4F46F225E4861F00EC7574 /* ResultPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F46F125E4861F00EC7574 /* ResultPresentationModel.swift */; };
 		0E4F476625E4BD8A00EC7574 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F476825E4BD8A00EC7574 /* InfoPlist.strings */; };
+		6E60D54F983F3BBC151364DF /* Pods_MultipeerRPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3161BF866657C83609FACE4 /* Pods_MultipeerRPS.framework */; };
+		7EF5820E9D712FB972004AAF /* Pods_MultipeerRPS_MultipeerRPSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A21268AB67BA181441266E /* Pods_MultipeerRPS_MultipeerRPSUITests.framework */; };
+		9CDD04E7296A3061606E5F1B /* Pods_MultipeerRPSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883D78F390978191BBAC1BA3 /* Pods_MultipeerRPSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,15 @@
 		0E4F46F125E4861F00EC7574 /* ResultPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresentationModel.swift; sourceTree = "<group>"; };
 		0E4F476725E4BD8A00EC7574 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E4F476C25E4BD8B00EC7574 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		281BB2F70C271D520B74B767 /* Pods-MultipeerRPS-MultipeerRPSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipeerRPS-MultipeerRPSUITests.release.xcconfig"; path = "Target Support Files/Pods-MultipeerRPS-MultipeerRPSUITests/Pods-MultipeerRPS-MultipeerRPSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3AB41872248684C833C4AF80 /* Pods-MultipeerRPS-MultipeerRPSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipeerRPS-MultipeerRPSUITests.debug.xcconfig"; path = "Target Support Files/Pods-MultipeerRPS-MultipeerRPSUITests/Pods-MultipeerRPS-MultipeerRPSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54A21268AB67BA181441266E /* Pods_MultipeerRPS_MultipeerRPSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultipeerRPS_MultipeerRPSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87448C26DE3C48C842A3912E /* Pods-MultipeerRPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipeerRPS.debug.xcconfig"; path = "Target Support Files/Pods-MultipeerRPS/Pods-MultipeerRPS.debug.xcconfig"; sourceTree = "<group>"; };
+		883D78F390978191BBAC1BA3 /* Pods_MultipeerRPSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultipeerRPSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BFFB56CB8D7E3B5DB9D206 /* Pods-MultipeerRPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipeerRPS.release.xcconfig"; path = "Target Support Files/Pods-MultipeerRPS/Pods-MultipeerRPS.release.xcconfig"; sourceTree = "<group>"; };
+		D379BFFD0AEA34C4A6524650 /* Pods-MultipeerRPSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipeerRPSTests.release.xcconfig"; path = "Target Support Files/Pods-MultipeerRPSTests/Pods-MultipeerRPSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3161BF866657C83609FACE4 /* Pods_MultipeerRPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultipeerRPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30EA177CE67DF6240F401F4 /* Pods-MultipeerRPSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipeerRPSTests.debug.xcconfig"; path = "Target Support Files/Pods-MultipeerRPSTests/Pods-MultipeerRPSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E60D54F983F3BBC151364DF /* Pods_MultipeerRPS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDD04E7296A3061606E5F1B /* Pods_MultipeerRPSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF5820E9D712FB972004AAF /* Pods_MultipeerRPS_MultipeerRPSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +134,8 @@
 				0E15D35C25E34CB900E99D04 /* MultipeerRPSTests */,
 				0E15D36725E34CB900E99D04 /* MultipeerRPSUITests */,
 				0E15D34425E34CB700E99D04 /* Products */,
+				B96DC0CC80A9E1F28B8B5149 /* Pods */,
+				5461FC3C9AC6F3506C604445 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +230,29 @@
 			path = PresentationModels;
 			sourceTree = "<group>";
 		};
+		5461FC3C9AC6F3506C604445 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3161BF866657C83609FACE4 /* Pods_MultipeerRPS.framework */,
+				54A21268AB67BA181441266E /* Pods_MultipeerRPS_MultipeerRPSUITests.framework */,
+				883D78F390978191BBAC1BA3 /* Pods_MultipeerRPSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B96DC0CC80A9E1F28B8B5149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87448C26DE3C48C842A3912E /* Pods-MultipeerRPS.debug.xcconfig */,
+				A6BFFB56CB8D7E3B5DB9D206 /* Pods-MultipeerRPS.release.xcconfig */,
+				3AB41872248684C833C4AF80 /* Pods-MultipeerRPS-MultipeerRPSUITests.debug.xcconfig */,
+				281BB2F70C271D520B74B767 /* Pods-MultipeerRPS-MultipeerRPSUITests.release.xcconfig */,
+				F30EA177CE67DF6240F401F4 /* Pods-MultipeerRPSTests.debug.xcconfig */,
+				D379BFFD0AEA34C4A6524650 /* Pods-MultipeerRPSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E15D36D25E34CB900E99D04 /* Build configuration list for PBXNativeTarget "MultipeerRPS" */;
 			buildPhases = (
+				8E65FACE910B3929E5626B6B /* [CP] Check Pods Manifest.lock */,
 				0E15D33F25E34CB700E99D04 /* Sources */,
 				0E15D34025E34CB700E99D04 /* Frameworks */,
 				0E15D34125E34CB700E99D04 /* Resources */,
+				1C4FA0BBB25033336533C928 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E15D37025E34CB900E99D04 /* Build configuration list for PBXNativeTarget "MultipeerRPSTests" */;
 			buildPhases = (
+				15A2A486DC1BC8B37DE2CFF1 /* [CP] Check Pods Manifest.lock */,
 				0E15D35525E34CB900E99D04 /* Sources */,
 				0E15D35625E34CB900E99D04 /* Frameworks */,
 				0E15D35725E34CB900E99D04 /* Resources */,
@@ -255,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E15D37325E34CB900E99D04 /* Build configuration list for PBXNativeTarget "MultipeerRPSUITests" */;
 			buildPhases = (
+				2DA72C1F1269417DFDB0FD05 /* [CP] Check Pods Manifest.lock */,
 				0E15D36025E34CB900E99D04 /* Sources */,
 				0E15D36125E34CB900E99D04 /* Frameworks */,
 				0E15D36225E34CB900E99D04 /* Resources */,
+				233E7F59605C8EF720821A1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +385,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A2A486DC1BC8B37DE2CFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultipeerRPSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C4FA0BBB25033336533C928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultipeerRPS/Pods-MultipeerRPS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultipeerRPS/Pods-MultipeerRPS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultipeerRPS/Pods-MultipeerRPS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		233E7F59605C8EF720821A1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultipeerRPS-MultipeerRPSUITests/Pods-MultipeerRPS-MultipeerRPSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultipeerRPS-MultipeerRPSUITests/Pods-MultipeerRPS-MultipeerRPSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultipeerRPS-MultipeerRPSUITests/Pods-MultipeerRPS-MultipeerRPSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DA72C1F1269417DFDB0FD05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultipeerRPS-MultipeerRPSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E65FACE910B3929E5626B6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultipeerRPS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E15D33F25E34CB700E99D04 /* Sources */ = {
@@ -556,6 +704,7 @@
 		};
 		0E15D36E25E34CB900E99D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87448C26DE3C48C842A3912E /* Pods-MultipeerRPS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -568,6 +717,63 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.MultipeerRPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -577,6 +783,7 @@
 		};
 		0E15D36F25E34CB900E99D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6BFFB56CB8D7E3B5DB9D206 /* Pods-MultipeerRPS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -589,6 +796,63 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.MultipeerRPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -598,6 +862,7 @@
 		};
 		0E15D37125E34CB900E99D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30EA177CE67DF6240F401F4 /* Pods-MultipeerRPSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,6 +885,7 @@
 		};
 		0E15D37225E34CB900E99D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D379BFFD0AEA34C4A6524650 /* Pods-MultipeerRPSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -642,6 +908,7 @@
 		};
 		0E15D37425E34CB900E99D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB41872248684C833C4AF80 /* Pods-MultipeerRPS-MultipeerRPSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -662,6 +929,7 @@
 		};
 		0E15D37525E34CB900E99D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281BB2F70C271D520B74B767 /* Pods-MultipeerRPS-MultipeerRPSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
