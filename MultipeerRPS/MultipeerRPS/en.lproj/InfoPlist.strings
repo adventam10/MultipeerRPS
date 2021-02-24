@@ -6,5 +6,5 @@
   
 */
 
-CFBundleDisplayName = "SD RPS";
+CFBundleDisplayName = "P2P RPS";
 NSLocalNetworkUsageDescription = "This app will be able to discover and connect to devices on the networks you use.";

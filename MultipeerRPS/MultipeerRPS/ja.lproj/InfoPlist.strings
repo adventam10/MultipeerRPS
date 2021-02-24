@@ -6,5 +6,5 @@
   
 */
 
-CFBundleDisplayName = "SDじゃんけん";
+CFBundleDisplayName = "P2Pじゃんけん";
 NSLocalNetworkUsageDescription = "使用中のネットワーク上のデバイスの検索と接続ができるようになります。";
