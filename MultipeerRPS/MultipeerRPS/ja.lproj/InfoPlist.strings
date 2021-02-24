@@ -7,3 +7,4 @@
 */
 
 CFBundleDisplayName = "SDじゃんけん";
+NSLocalNetworkUsageDescription = "使用中のネットワーク上のデバイスの検索と接続ができるようになります。";
