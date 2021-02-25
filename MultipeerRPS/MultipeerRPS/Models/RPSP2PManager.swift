@@ -82,7 +82,10 @@ final class RPSP2PManagerImp: NSObject, RPSP2PManager {
     }
 
     func makeBrowserViewController() -> MCBrowserViewController {
-        return .init(serviceType: serviceType, session: session)
+        let vc = MCBrowserViewController(serviceType: serviceType, session: session)
+        // １対１想定
+        vc.maximumNumberOfPeers = 2
+        return vc
     }
 }
 
