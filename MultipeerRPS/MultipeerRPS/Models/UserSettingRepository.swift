@@ -7,6 +7,7 @@
 
 import Foundation
 import class UIKit.UIDevice
+import class MultipeerConnectivity.MCPeerID
 
 typealias ResultCount = (win: Int, lose: Int, draw: Int)
 
@@ -15,6 +16,8 @@ protocol UserSettingRepository {
     func updateDisplayName(_ displayName: String?)
     var resultCount: ResultCount { get }
     func updateResultCount(_ resultCount: ResultCount)
+    var peerID: MCPeerID? { get }
+    func updatePeerID(_ peerID: MCPeerID)
 }
 
 extension UserSettingRepository {
@@ -34,6 +37,7 @@ struct UserSettingRepositoryImp: UserSettingRepository {
         case winCount = "RPS_WIN_COUNT"
         case loseCount = "RPS_LOSE_COUNT"
         case drawCount = "RPS_DRAW_COUNT"
+        case peerID = "RPS_PEER_ID"
     }
 
     private let userDefaults = UserDefaults.standard
@@ -57,5 +61,17 @@ struct UserSettingRepositoryImp: UserSettingRepository {
         userDefaults.set(resultCount.win, forKey: Key.winCount.rawValue)
         userDefaults.set(resultCount.lose, forKey: Key.loseCount.rawValue)
         userDefaults.set(resultCount.draw, forKey: Key.drawCount.rawValue)
+    }
+
+    var peerID: MCPeerID? {
+        guard let peerIDData = userDefaults.object(forKey: Key.peerID.rawValue) as? Data else {
+            return nil
+        }
+        return try? NSKeyedUnarchiver.unarchivedObject(ofClass: MCPeerID.self, from: peerIDData)
+    }
+
+    func updatePeerID(_ peerID: MCPeerID) {
+        let peerIDData = try? NSKeyedArchiver.archivedData(withRootObject: peerID, requiringSecureCoding: true)
+        userDefaults.set(peerIDData, forKey: Key.peerID.rawValue)
     }
 }

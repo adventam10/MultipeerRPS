@@ -8,6 +8,7 @@
 import Foundation
 import class MultipeerConnectivity.MCBrowserViewController
 import enum MultipeerConnectivity.MCSessionState
+import class MultipeerConnectivity.MCPeerID
 
 final class RPSPresentationModel {
 
@@ -23,6 +24,17 @@ final class RPSPresentationModel {
     private let userSettingRepository: UserSettingRepository
     private let p2pManager: RPSP2PManager
     private (set) var resultCount: ResultCount
+
+    private var peerID: MCPeerID {
+        let newDisplayName = userSettingRepository.accountName
+        guard let id = userSettingRepository.peerID else {
+            return refreshPeerID(displayName: newDisplayName)
+        }
+        if id.displayName != newDisplayName {
+            return refreshPeerID(displayName: newDisplayName)
+        }
+        return id
+    }
 
     var isConnected: Bool {
         return p2pManager.isConnected
@@ -108,13 +120,19 @@ final class RPSPresentationModel {
     func makeResultPresentationModel(result: RPSResult) -> ResultPresentationModel {
         return .init(result: result, moves: moves)
     }
+
+    private func refreshPeerID(displayName: String) -> MCPeerID {
+        let peerID = MCPeerID(displayName: displayName)
+        userSettingRepository.updatePeerID(peerID)
+        return peerID
+    }
 }
 
 extension RPSPresentationModel {
 
     func setupP2PManager(didReceiveMoveHandler: @escaping ((RPSMove, String) -> ()),
                          didChangeStateHandler: @escaping ((MCSessionState, String) -> ())) {
-        p2pManager.setup(displayName: userSettingRepository.accountName,
+        p2pManager.setup(peerID: peerID,
                          didReceiveMoveHandler: didReceiveMoveHandler,
                          didChangeStateHandler: didChangeStateHandler)
     }

@@ -9,7 +9,7 @@ import Foundation
 import MultipeerConnectivity
 
 protocol RPSP2PManager {
-    func setup(displayName: String,
+    func setup(peerID: MCPeerID,
                didReceiveMoveHandler: @escaping ((RPSMove, String) -> ()),
                didChangeStateHandler: @escaping ((MCSessionState, String) -> ()))
     func sendMove(_ move: RPSMove)
@@ -22,7 +22,7 @@ protocol RPSP2PManager {
 
 final class RPSP2PManagerImp: NSObject, RPSP2PManager {
 
-    private let serviceType = "p2p-rps"
+    private let serviceType = "am10-p2p-rps"
     private var session: MCSession!
     private var advertiser: MCNearbyServiceAdvertiser!
 
@@ -33,7 +33,7 @@ final class RPSP2PManagerImp: NSObject, RPSP2PManager {
         return !session.connectedPeers.isEmpty
     }
 
-    func setup(displayName: String,
+    func setup(peerID: MCPeerID,
                didReceiveMoveHandler: @escaping ((RPSMove, String) -> ()),
                didChangeStateHandler: @escaping ((MCSessionState, String) -> ())) {
         if let advertiser = advertiser {
@@ -46,7 +46,6 @@ final class RPSP2PManagerImp: NSObject, RPSP2PManager {
         self.didReceiveMoveHandler = didReceiveMoveHandler
         self.didChangeStateHandler = didChangeStateHandler
 
-        let peerID = MCPeerID(displayName: displayName)
         session = MCSession(peer: peerID)
         session.delegate = self
 
